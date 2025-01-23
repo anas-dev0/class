@@ -17,6 +17,9 @@ class point{
     float y;
 
     public:
+    point(){
+        x=5;y=5;
+    }
     void init(float abs ,float ord){x=abs;y=ord;}
     void translater(float dx,float dy){x=x+dx;y=y+dy;}
     void print(){
@@ -34,11 +37,13 @@ void rec(){
 
 }
 void poin(){
-    point p1;
+    point p1,p2;
     p1.init(2.5,7.5);
     p1.print();
     p1.translater(2,2);
     p1.print();
+    cout<<"here is point 2"<<endl;
+    p2.print();
 }
 int main(){
     int x;
